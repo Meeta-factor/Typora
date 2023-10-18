@@ -54,3 +54,29 @@ $\begin{aligned}&\Rightarrow\sum_{i=1}^ku\Delta(v)=uv-\sum_{i=1}^{k-1}v\Delta(u)
 - [Topology](https://mathworld.wolfram.com/Topology.html)
 - [Analytic geometry](https://encyclopedia.thefreedictionary.com/analytic+geometry)
 
+## Application in engineering
+
+### RC电路的零输入响应
+
+![img](https://pic1.zhimg.com/80/v2-521eacf925022bf8f7364a5a8498ef34_720w.webp)
+
+#### S接a
+
+电容充电
+
+#### S由a拨向b
+
+KVL function:$u_c-u_R=0$
+
+$u_R=Ri,i=-C\frac{\mathrm{d}u_c}{\mathrm{d}t}$
+
+$\Rightarrow RC\frac{\mathrm{d}u_c}{\mathrm{d}t}+u_c=0$
+
+$\Rightarrow \frac{\mathrm{d}u_c}{u_c}=-\frac{1}{RC}\mathrm{d}t$
+
+$\Rightarrow \int\frac{\mathrm{d}u_c}{u_c}=-\frac{1}{RC}\int\mathrm{d}t$
+
+$\Rightarrow\ln\abs{u_c}=-\frac{t}{RC}$
+
+$\Rightarrow u_c=e^{-\frac{t}{RC}}$
+
